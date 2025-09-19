@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Cloud Rush</title>
+    <link rel="stylesheet" href="../renderer/styles/index.css">
   </head>
   <body>
     <div id="windowControls" style="position:absolute; top:10px; right:10px;">
-        <img id="minimizeBtn" src="../renderer/minimize.png" style="width:30px; height:30px; cursor:pointer;">
-        <img id="closeBtn" src="../renderer/close.png" style="width:30px; height:30px; cursor:pointer;">
+        <img id="minimizeBtn" src="../renderer/assets/sprites/minus.png" style="width:30px; height:30px; cursor:pointer;">
+        <img id="closeBtn" src="../renderer/assets/sprites/close.png" style="width:30px; height:30px; cursor:pointer;">
     </div>
-
-
-    <canvas id="gameCanvas" width="1024" height="1024" style="border:3px solid #479CD0;"></canvas>
-    <script src="../renderer/renderer.js"></script>
+    <div id="container">
+        <canvas id="gameCanvas" width="724" height="724" style="border:3px solid #479CD0;"></canvas>
+        <script src="../renderer/renderer.js"></script>
+    </div>
   </body>
 </html>

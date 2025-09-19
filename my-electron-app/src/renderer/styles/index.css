@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E1F3FF; /* optioneel: achtergrond kleur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* voorkomt scrollbars */
+}
+
+#container {
+  position: relative; /* nodig voor absolute positionering van knoppen */
+}
+
+#windowControls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.window-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.window-btn:hover {
+  opacity: 1;
+}
